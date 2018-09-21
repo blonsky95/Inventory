@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_overview" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <TextView
+                android:id="@+id/edit_item_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_item_name"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/price"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edit_item_price"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_item_price"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/instock"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edit_item_quantity"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_item_quantity"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_gender" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/edit_item_supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_item_supplier_name"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/edit_item_supplier_email"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_item_supplier_email"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/edit_item_supplier_phone"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_item_supplier_phone"
+                android:padding="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/stock"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/plus_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:background="@color/grey"
+            android:padding="16dp"
+            android:text="@string/increase_stock"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/q_display"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/saleButton"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/minus_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:background="@color/grey"
+            android:padding="16dp"
+            android:text="@string/reduce_stock"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/supplier_call"
+        android:layout_marginTop="48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/callButton"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/phone_supplier"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
